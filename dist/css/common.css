@@ -1,0 +1,617 @@
+@charset "UTF-8";
+/* line 5, ../sass/common.scss */
+ul, ol {
+  list-style: none;
+  outline-style: none; }
+
+/* line 9, ../sass/common.scss */
+i, em, b {
+  font-style: normal;
+  font-weight: normal; }
+
+/* line 13, ../sass/common.scss */
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun","宋体";
+  outline: none; }
+
+/* line 19, ../sass/common.scss */
+input:focus, button:focus, select:focus {
+  outline: none; }
+
+/* line 22, ../sass/common.scss */
+select, input {
+  vertical-align: middle; }
+
+/* line 25, ../sass/common.scss */
+select, input, textarea {
+  font-size: 12px;
+  margin: 0; }
+
+/* line 29, ../sass/common.scss */
+textarea {
+  resize: none; }
+
+/* line 32, ../sass/common.scss */
+table {
+  border-collapse: collapse; }
+
+/* line 35, ../sass/common.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "微软雅黑"; }
+
+/* line 40, ../sass/common.scss */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both; }
+
+/* line 47, ../sass/common.scss */
+.clearfix {
+  zoom: 1; }
+
+/* line 50, ../sass/common.scss */
+.clearit {
+  clear: both;
+  height: 0;
+  font-size: 0;
+  overflow: hidden; }
+
+/* line 56, ../sass/common.scss */
+a {
+  color: #666;
+  text-decoration: none; }
+
+/* line 60, ../sass/common.scss */
+a:hover {
+  cursor: pointer;
+  color: #00b7ee; }
+
+/* line 64, ../sass/common.scss */
+.no-margin {
+  margin: 0 !important; }
+
+/* line 67, ../sass/common.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 68, ../sass/common.scss */
+html, body {
+  font-family: "微软雅黑"; }
+
+img {
+  border: none 0; }
+
+/* li
+ne 71, ../sass/common.scss */
+#header {
+  width: 100%;
+  height: 65px;
+  background: #f6f6f6; }
+
+/* line 75, ../sass/common.scss */
+#header .nav {
+  width: 1220px;
+  margin: auto;
+  height: 65px; }
+
+/* line 79, ../sass/common.scss */
+#header .nav .logo {
+  float: left;
+  height: 36px;
+  margin-top: 20px;
+  overflow: hidden;
+  margin-right: 50px; }
+
+/* line 85, ../sass/common.scss */
+#header .nav .logo img {
+  width: 100%;
+  height: auto; }
+
+/* line 89, ../sass/common.scss */
+#header .nav .logo span {
+  height: 27px;
+  float: left;
+  margin-top: 7px;
+  padding-left: 10px;
+  margin-left: 8px;
+  line-height: 27px;
+  color: #000;
+  border-left: 1px solid #000; }
+
+/* line 98, ../sass/common.scss */
+#header .nav ul {
+  color: #000;
+  height: 65px;
+  width: auto;
+  float: left; }
+
+/* line 103, ../sass/common.scss */
+#header .nav ul li {
+  margin: 32px 8px 0; }
+
+/* line 105, ../sass/common.scss */
+#header .nav ul li a {
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 16px;
+  height: 33px; }
+
+/* line 110, ../sass/common.scss */
+#header .nav ul li .active {
+  border-bottom: 2px solid #a9cc28; }
+
+/* line 112, ../sass/common.scss */
+#header .nav .point {
+  display: inline-block;
+  background: url(../imgs/point.png) no-repeat;
+  width: 51px;
+  height: 51px;
+  margin-top: 14px;
+  margin-left: 118px; }
+
+/*footer part*/
+/* line 123, ../sass/common.scss */
+#footer {
+  background: #333333;
+  width: 100%;
+  color: #9c9c9c;
+  overflow: hidden;
+  padding: 48px 0; }
+
+/* line 128, ../sass/common.scss */
+#footer .f_cont {
+  width: 992px;
+  margin: auto; }
+
+/* line 131, ../sass/common.scss */
+#footer .f_cont .f_left {
+  float: left;
+  width: 447px;
+  padding-left: 8px;
+  font-size: 12px;
+  border-right: 1px solid #fff; }
+
+/* line 137, ../sass/common.scss */
+#footer .f_cont .f_left .f_logo {
+  margin-bottom: 16px; }
+
+/* line 139, ../sass/common.scss */
+#footer .f_cont .f_left p {
+  line-height: 16px; }
+
+/* line 141, ../sass/common.scss */
+#footer .f_cont .f_right {
+  float: left;
+  overflow: hidden;
+  padding-left: 20px; }
+
+/* line 145, ../sass/common.scss */
+#footer .f_cont .f_right li {
+  float: left;
+  margin-right: 30px; }
+
+/* line 148, ../sass/common.scss */
+#footer .f_cont .f_right li p {
+  line-height: 18px;
+  font-size: 14px; }
+
+/* line 151, ../sass/common.scss */
+#footer .f_cont .f_right li .title_lg {
+  font-size: 20px;
+  margin-bottom: 16px; }
+
+/*＝＝＝＝＝＝公用样式＝＝＝＝＝＝＝＝＝*/
+/* line 156, ../sass/common.scss */
+.list-horizontal {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 62, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left; }
+
+/* line 160, ../sass/common.scss */
+.list-inline-block {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 49, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+.list-inline-block li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap; }
+
+/* line 166, ../sass/common.scss */
+.block-child3 li {
+  width: 33.3333%;
+  height: auto;
+  overflow: hidden; }
+
+/* line 173, ../sass/common.scss */
+.inline-child3 .li-left {
+  float: left; }
+
+/* line 174, ../sass/common.scss */
+.inline-child3 .li-right {
+  float: right; }
+
+/* line 176, ../sass/common.scss */
+.force-wrap {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word; }
+
+/* line 182, ../sass/common.scss */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+/* line 185, ../sass/common.scss */
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline; }
+
+/* line 189, ../sass/common.scss */
+.main_max {
+  width: 100%;
+  overflow: hidden;
+  height: auto; }
+
+/* line 194, ../sass/common.scss */
+.main {
+  width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+/* line 198, ../sass/common.scss */
+.main .section {
+  float: left;
+  overflow: hidden;
+  width: 727px; }
+
+/* line 203, ../sass/common.scss */
+.main .aside {
+  width: 252px;
+  background: #fafafa;
+  float: right;
+  overflow: hidden; }
+
+/* 查看更多*/
+/* line 212, ../sass/common.scss */
+.title {
+  margin: 26px 0;
+  border-bottom: 1px solid #BBBBBB; }
+
+/* line 215, ../sass/common.scss */
+.title span {
+  color: #505050;
+  display: inline-block;
+  font-size: 20px;
+  padding: 4px 0;
+  border-bottom: 2px solid #21ace3; }
+
+/* line 222, ../sass/common.scss */
+.title a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  float: right;
+  margin-top: 3px; }
+
+/* 页面中部背景图*/
+/* line 229, ../sass/common.scss */
+.art_top_img {
+  width: 100%;
+  min-width: 1220px;
+  height: 622px; }
+
+/* line 233, ../sass/common.scss */
+.art_top_img img {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.scale img {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+
+.scale:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); }
+
+/*======压缩图片================*/
+.img_icon {
+  background: url(../imgs/img_icon.png) no-repeat; }
+
+.artic_list_msg {
+  height: 18px;
+  width: 21px;
+  background-position: 0 0; }
+
+.artic_list_calender {
+  height: 18px;
+  width: 21px;
+  background-position: 0 -18px; }
+
+.page2_icon1 {
+  height: 30px;
+  width: 30px;
+  background-position: 0 -36px; }
+
+.page2_icon2 {
+  height: 30px;
+  width: 30px;
+  background-position: 0 -66px; }
+
+.page2_icon3 {
+  height: 30px;
+  width: 30px;
+  background-position: 0 -96px; }
+
+.page2_icon4 {
+  height: 30px;
+  width: 30px;
+  background-position: 0 -126px; }
+
+.prev {
+  height: 123px;
+  width: 53px;
+  background-position: 0 -156px; }
+
+.next {
+  height: 123px;
+  width: 53px;
+  background-position: 0 -279px; }
+
+.page7_icon2 {
+  height: 54px;
+  width: 54px;
+  background-position: 0 -402px; }
+
+.page7_icon3 {
+  height: 54px;
+  width: 54px;
+  background-position: 0 -456px; }
+
+.view_more {
+  height: 20px;
+  width: 56px;
+  background-position: 0 -510px; }
+
+.book_icon {
+  height: 89px;
+  width: 89px;
+  background-position: 0 -530px; }
+
+.page7_icon7 {
+  height: 135px;
+  width: 126px;
+  background-position: 0 -619px; }
+
+.page7_icon8 {
+  height: 135px;
+  width: 126px;
+  background-position: 0 -754px; }
+
+.page7_icon9 {
+  height: 135px;
+  width: 126px;
+  background-position: 0 -889px; }
+
+.page7_icon6 {
+  height: 135px;
+  width: 126px;
+  background-position: 0 -1024px; }
+
+.page7_icon4 {
+  height: 135px;
+  width: 126px;
+  background-position: 0 -1159px; }
+
+.page7_icon5 {
+  height: 135px;
+  width: 126px;
+  background-position: 0 -1294px; }
+
+.tech_list2 {
+  height: 170px;
+  width: 170px;
+  background-position: 0 -1429px; }
+
+.tech_list1 {
+  height: 170px;
+  width: 170px;
+  background-position: 0 -1599px; }
+
+.tech_list3 {
+  height: 170px;
+  width: 170px;
+  background-position: 0 -1769px; }
+
+.yellow_bg {
+  height: 86px;
+  width: 180px;
+  background-position: 0 -1939px; }
+
+.green_bg {
+  height: 86px;
+  width: 180px;
+  background-position: 0 -2025px; }
+
+.bblue {
+  height: 86px;
+  width: 180px;
+  background-position: 0 -2111px; }
+
+.red_bg {
+  height: 86px;
+  width: 180px;
+  background-position: 0 -2197px; }
+
+.ablue_bg {
+  height: 86px;
+  width: 180px;
+  background-position: 0 -2283px; }
+
+body {
+  min-width: 1220px; }
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg); }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(-90deg); } }
+
+@keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg); }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(-90deg);
+            transform: perspective(400px) rotateX(-90deg); } }
+
+.animated.swingOutX {
+  -webkit-transform-origin: top;
+  -webkit-animation-name: swingOutX;
+  -webkit-backface-visibility: visible !important;
+  -moz-animation-name: swingOutX;
+  -moz-backface-visibility: visible !important;
+  -o-animation-name: swingOutX;
+  -o-backface-visibility: visible !important;
+  -webkit-animation-name: swingOutX;
+          animation-name: swingOutX;
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important; }
+
+@-webkit-keyframes swingInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(-90deg); }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg); } }
+
+@keyframes swingInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(-90deg);
+            transform: perspective(400px) rotateX(-90deg); }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg); } }
+
+.animated.swingInX {
+  -webkit-transform-origin: top;
+  -ie-transform-origin: top;
+  transform-origin: top;
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: swingInX;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: swingInX;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: swingInX;
+  -webkit-backface-visibility: visible !important;
+          backface-visibility: visible !important;
+  -webkit-animation-name: swingInX;
+          animation-name: swingInX; }
+
+@-webkit-keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg); }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(-90deg); } }
+
+@keyframes swingOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg); }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(-90deg);
+            transform: perspective(400px) rotateX(-90deg); } }
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0; }
+
+/*=========page6-7文字特效===========*/
+.step {
+  padding: 0 10px;
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  background: #3e4046;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+/* line 101, ../sass/page7.scss */
+.support_img:hover .step {
+  height: 100%;
+  padding-top: 68px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, transparent), color-stop(50%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  background: -webkit-linear-gradient(top, transparent 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(top, transparent 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(to bottom, transparent 10px, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#99000000',GradientType=0); }

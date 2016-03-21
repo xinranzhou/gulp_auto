@@ -1,0 +1,42 @@
+@charset "UTF-8";
+％inline-block, a {
+  display: inline-block; }
+
+％block {
+  display: block; }
+
+％inline {
+  display: inline; }
+
+body {
+  background-color: #EEE;
+  color: #gey; }
+  body h2 {
+    color: Red; }
+
+p, a {
+  border: 1px dashed red;
+  border-radius: 1px; }
+
+a {
+  width: 10px;
+  height: 20px;
+  display: inline-block; }
+
+.test {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 10px; }
+
+.header-text-small {
+  font-size: 12px; }
+
+.header-text-medium {
+  font-size: 20px; }
+
+.header-text-big {
+  font-size: 40px; }
+
+/*.box {
+  @include box-shadow(0 0 1px rgba(#000,.5),0 0 2px rgba(#000,.2));
+ }*/
