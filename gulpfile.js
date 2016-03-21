@@ -10,18 +10,18 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     del = require('del');
 
-gulp.task('styles',function(){
-  gulp.src('./src/sass/*.scss')
-    .pipe(sass())
-    .pipe(autoprefixer('last 2 version'))
-    //.pipe(concat('*.css'))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(notify('Style task complete'))
-
-})
+//gulp.task('styles',function(){
+//  gulp.src('./src/sass/*.scss')
+//    .pipe(sass())
+//    .pipe(autoprefixer('last 2 version'))
+//    //.pipe(concat('*.css'))
+//    .pipe(gulp.dest('./dist/css'))
+//    .pipe(rename({suffix: '.min'}))
+//    .pipe(minifycss())
+//    .pipe(gulp.dest('./dist/css'))
+//    .pipe(notify('Style task complete'))
+//
+//})
 
 gulp.task('scripts',function(){
   gulp.src('./src/coffee/*.coffee')
@@ -36,10 +36,10 @@ gulp.task('scripts',function(){
 
 gulp.task('templates', function() {
   var YOUR_LOCALS = {};
- 
   gulp.src('./views/**/*.jade')
     .pipe(jade({
-      locals: YOUR_LOCALS
+      locals: YOUR_LOCALS,
+          pretty: true
     }))
     .pipe(gulp.dest('./dist'))
     .pipe(notify("Templates task complete"))
@@ -54,11 +54,12 @@ gulp.task('clean',function(cb){
 
 
 gulp.task('default',['clean'],function(){
-  gulp.start('styles','scripts','templates');
+  //gulp.start('styles','scripts','templates');
+    gulp.start('scripts','templates');
 })
 
 gulp.task('watch',function(){
-  gulp.watch('./src/sass/*.scss',['styles']);
+  //gulp.watch('./src/sass/*.scss',['styles']);
   gulp.watch('./src/coffee/*.coffee',['scripts']);
   gulp.watch('./views/*.jade',['templates']);
 })

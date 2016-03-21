@@ -1,39 +1,50 @@
 @charset "UTF-8";
+/* line 1, ../../src/sass/main.scss */
 ％inline-block, a {
   display: inline-block; }
 
+/* line 2, ../../src/sass/main.scss */
 ％block {
   display: block; }
 
+/* line 3, ../../src/sass/main.scss */
 ％inline {
   display: inline; }
 
+/* line 5, ../../src/sass/main.scss */
 body {
   background-color: #EEE;
   color: #gey; }
+  /* line 7, ../../src/sass/main.scss */
   body h2 {
     color: Red; }
 
+/* line 12, ../../src/sass/main.scss */
 p, a {
   border: 1px dashed red;
   border-radius: 1px; }
 
+/* line 18, ../../src/sass/main.scss */
 a {
   width: 10px;
   height: 20px;
   display: inline-block; }
 
+/* line 28, ../../src/sass/main.scss */
 .test {
   margin-top: 10px;
   padding-top: 10px;
   border-top: 10px; }
 
+/* line 32, ../../src/sass/main.scss */
 .header-text-small {
   font-size: 12px; }
 
+/* line 33, ../../src/sass/main.scss */
 .header-text-medium {
   font-size: 20px; }
 
+/* line 34, ../../src/sass/main.scss */
 .header-text-big {
   font-size: 40px; }
 
