@@ -1,94 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="北京飞博教育科技股份有限公司成立于2012年, 是国内外教云平台的首创者，我们专注为教育机构提供全球外教资源。目前飞博已经与全国数百家教育机构达成合作，成功为合作伙伴搭建自主品牌网校，完成外教团队教学对接工作，协助合作伙伴最快速实现在线英语课程的顺利开展。">
-    <meta name="keywords" content="飞博教育,外教云平台,在线教育,云教育,外教一对一,在线教育云平台,互联网教育">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />-->
-    <link rel="styleSheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/page5.css">
-    <link rel="stylesheet" href="css/screen.css">
-    <title>公立学校</title>
-  </head>
-  <body>
-    <div id="header" class="header header--fixed hide-from-print">
-      <div class="nav">
-        <div class="logo"><a href="/index"><img src="imgs/header_logo.png" alt="飞博教育"></a></div>
-        <ul class="list-horizontal">
-          <li><a href="/index">首页</a></li>
-          <li><a href="/product">产品体系</a></li>
-          <li><a href="/success">成功案例</a></li>
-          <li><a href="/school" class="active">公立学校</a></li>
-          <li><a href="/teacher">外教师资</a></li>
-          <li><a href="/feibo">飞博学院</a></li>
-          <li><a href="/business">商务合作</a></li>
-        </ul>
-        <!-- <a class="point" href="#"></a>-->
-      </div>
-    </div>
-    <div class="art_top_img"><img src="imgs/top_bg_4.png"></div>
-    <div class="main">
-      <p class="info_title">  当前位置：<a href="./">  首页&gt;</a><a href="./">  新闻中心&gt;</a> “微留学体验馆—英国老师专程来华，2天时间全程陪伴”</p>
-      <div class="section">
-        <div class="artc">
-          <h2 class="ellipsis"></h2> aksj
-          <p>
-            kkkk
-            |sadas asd//asdas
-          </p>
-        </div>
-      </div>
-      <div class="active test"> 喜爱机会</div>
-    </div>
-    <div class="main">
-      <div class="container-fluid"></div>
-      <div class="row">
-        <div style="border:1px solid blue" class="col-lg-6 col-xm-1">
-          <ul class="list-group list-horizontal">
-            <li class="list-group-item">第一个</li>
-            <li class="list-group-item">第一个</li>
-            <li class="list-group-item-danger">第一个</li>
-            <li class="list-group-item-success">第一个</li>
-          </ul>
-        </div>
-        <div style="border:1px solid red" class="col-lg-6 col-xm-1">
-          <ul class="text-danger">
-            <li>第一个</li>
-            <li>第一个</li>
-            <li>第一个</li>
-            <li>第一个</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <div class="f_cont">
-        <div class="f_left">
-          <div class="f_logo"><img src="imgs/footer_logo.png" alt="飞博教育"></div>
-          <p>北京飞博教育科技股份有限公司</p>
-          <p>Copyright ©2016. All Rights Reserved</p>
-          <p>京ICP备12012854号-3   京公网安备11010502027391号</p>
-          <div style="display: none;">
-            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258063509'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258063509%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-          </div>
-        </div>
-        <ul class="f_right">
-          <li>
-            <p class="title_lg">关于我们</p>
-            <p><a href="/about">加入我们</a></p>
-            <!-- <p><a href="javascript:void (0);">飞博简介</a> </p>-->
-            <!-- <p><a href="javascript:void (0);">联系方式</a> </p>-->
-          </li>
-          <li>
-            <p class="title_lg">商务合作</p>
-            <p><a href="/success">成功案例</a></p>
-            <p><a href="/business">商务洽谈</a></p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-  </body>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jquery聚光灯插件制作jquery图片特效鼠标滑过图片当前图片高亮</title>
+  <meta name="description" content="jquery聚光灯插件制作jquery图片特效当鼠标滑过图片时当前图片高亮显示其余另外的图片变暗。jquery插件,jquery下载。" />
+</head>
+
+<body>
+
+<style type="text/css">
+  *{margin:0;padding:0;list-style-type:none;}
+  a,img{border:0;}
+  img{vertical-align:middle}
+  /* lamp */
+  .lamp{height:366px;width:960px;position:relative;margin:0 auto;}
+  .lamp .sublight{position:absolute;display:block;overflow:hidden;}
+  .lamp .pic1{top:0;left:0;width:240px;height:366px;}
+  .lamp .pic2{top:0;left:240px;width:480px;height:183px;}
+  .lamp .pic3{top:0;left:720px;width:240px;height:183px;}
+  .lamp .pic4{top:183px;left:240px;width:240px;height:183px;}
+  .lamp .pic5{top:183px;left:480px;width:240px;height:183px;}
+  .lamp .pic6{top:183px;left:720px;width:240px;height:183px;}
+</style>
+
+<div class="lamp">
+  <a target="_blank" href="http://www.17sucai.com/" class="sublight pic1"><img src="images/dudu.jpg" title="DUDU 源自意大利的真皮风尚"></a>
+  <a target="_blank" href="http://www.17sucai.com/" class="sublight pic2"><img src="images/event_02.jpg" title="浪美 自由行走间的风尚标" /></a>
+  <a target="_blank" href="http://www.17sucai.com/" class="sublight pic3"><img src="images/gb3.jpg" title="戈尔本 成就男士商务之旅"></a>
+  <a target="_blank" href="http://www.17sucai.com/" class="sublight pic4"><img src="images/zne.jpg"title="卓妮尔 当优雅与摩登不期而遇"></a>
+  <a target="_blank" href="http://www.17sucai.com/" class="sublight pic5"><img src="images/fbs2.jpg"title="梵贝斯 来自东京武藏野设计"></a>
+  <a target="_blank" href="http://www.17sucai.com/" class="sublight pic6"><img src="images/xxbm2.jpg"title="希夏邦马 运动与旅行的完美结合"></a>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+  // 高亮效果
+  var blockHighLight = (function(window, $, undefined){
+    var markers = [];
+    return function(boxCls, itemCls, sizeArr){
+      var box = $(boxCls);
+      itemCls = itemCls || "a";
+      box.find(itemCls).each(function(i){
+        var self = $(this);
+        var arr,w,h,marker;
+        if(sizeArr !== undefined){
+          arr = sizeArr[i].split(",");
+          w = arr[0];
+          h = arr[1];
+        }else{
+          w = self.find("img").attr("width");
+          h = self.find("img").attr("height");
+        }
+        marker = $('<div style="cursor:pointer;top:0;left:0;position:absolute;width:'+w+'px;height:'+h+'px;filter:alpha(opacity=0);opacity: 0;background-color:#000;"></div>');
+        self.append(marker);
+        self.mouseover(function(){
+          for(var i=0; i<markers.length; i++){
+            markers[i].show().css({"opacity":'0.2',"filter":"alpha(opacity=20)"});
+          }
+          marker.hide();
+        });
+        markers.push(marker);
+
+      });
+
+      box.mouseout(function(){
+        for(var i=0; i<markers.length; i++){
+          markers[i].css({"opacity":'0',"filter":"alpha(opacity=0)"});
+        }
+      })
+    }
+  })(this, $);
+
+  blockHighLight(
+
+          ".lamp", //父元素
+          ".sublight", //子元素集
+
+          [
+            '240,366', //第一张图片的宽高
+            '480,183', //第二张图片的宽高
+            '240,183', //第三张图片的宽高
+            '240,183', //第四张图片的宽高
+            '240,183', //第五张图片的宽高
+            '240,183'  //第六张图片的宽高
+          ]
+  );
+
+</script>
+
+</body>
 </html>

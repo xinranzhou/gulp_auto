@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .odd{background: red}
+        .add{background: blue}
+        .active{color: #FFF}
+    </style>
+</head>
+<body>
+<table></table>
+    <script src="jquery/jquery-1.11.3.js"></script>
+    <script src="jquery/jquery.table-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('table').table_Ui({
+                tdLen:10,
+                tdHeight:'20px'
+            });
+        })
+    </script>
+</body>
+</html>
