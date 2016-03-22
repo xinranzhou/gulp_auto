@@ -1,0 +1,47 @@
+％inline-block{display: inline-block}
+％block{display: block}
+％inline{display: inline}
+$back:#gey;
+body{
+  background-color: #EEE;
+  h2{color: Red}
+ color:  $back;
+}
+$boder:1px;
+
+p{border: $boder dashed red;border-radius: $boder}
+@mixin butn($red:10px,$blue:20px){
+  width: $red;
+  height: $blue;
+  display: inline-block;
+}
+a{ @include butn;
+  @extend p;
+  @extend ％inline-block;
+}
+$propertise:(margin,padding,border);
+@mixin test($a,$val){
+  @each $pro in $propertise{
+    #{$pro}-#{$a}:$val;
+  }
+}
+.test{
+  @include test(top,10px);
+}
+@mixin generate-sizes($class, $small, $medium, $big) {
+  .#{$class}-small { font-size: $small; }
+  .#{$class}-medium { font-size: $medium; }
+  .#{$class}-big { font-size: $big; }
+}
+@include generate-sizes("header-text", 12px, 20px, 40px);
+//@mixin box-shadow($shadow...) {
+//  @if length($shadow) >= 1 {
+//    @include prefixer(box-shadow, $shadow);
+//  } @else{
+//    $shadow:0 0 4px rgba(0,0,0,.3);
+//    @include prefixer(box-shadow, $shadow);
+//  }
+//}
+/*.box {
+  @include box-shadow(0 0 1px rgba(#000,.5),0 0 2px rgba(#000,.2));
+ }*/
