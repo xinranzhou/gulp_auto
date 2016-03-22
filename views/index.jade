@@ -1,0 +1,81 @@
+extends layouts/layout.jade
+
+block con
+  .art_top_img
+    img(src='imgs/banner_bg.jpg', alt='网站横幅广告')
+  // ==========课堂风采=========
+  .main(style='padding: 40px 0')
+    .title
+      span 课堂风采
+    ul.list-horizontal.page5_class_ul.none_right
+      li
+        .page5_class_img
+          img(src='imgs/page5－image3.jpg')
+          p.p_school 西宁十三中
+        p.force-wrap.p_word 飞博课堂在西宁十三中是作为特色课开的，现在做了几个试点班，几个月下来学生们都挺喜欢上外教课的，一定程度上补充了我们的外教资源，下学期准备多开几个班。
+        // <a class="inline-block" href="javascript:void (0);">查看详情</a>
+      li
+        .page5_class_img
+          img(src='imgs/page5－image2.jpg')
+          p.p_school 重庆书院中学
+        p.force-wrap.p_word
+          | 教育信息化的大背景下引进了飞博课堂，学校电脑室使用率提高了，希望学校的付出能帮孩子们全面提升，教育制度改革的信号也是频频出现，英语听力分的比重在增加，我们的孩子先操练起来...
+        // <a class="inline-block" href="javascript:void (0);">查看详情</a>
+      li
+        .page5_class_img
+          img(src='imgs/page5－image1.jpg')
+          p.p_school 济宁学院附属中学
+        p.force-wrap.p_word
+          | 我们引进这个课程前做了不少考察，开始担心外教的质量和稳定性，也不清楚孩子们是不是喜欢这样的形式，现在看来还不错。我们用的是菲律宾外教，我挺喜欢Aegel老师的，很耐心也挺会引导孩子课堂气氛超好。
+        // <a class="inline-block" href="javascript:void (0);">查看详情</a>
+      li
+        .page5_class_img
+          img(src='imgs/page5－image4.jpg')
+          p.p_school 湘府中学
+        p.force-wrap.p_word
+          | 湘府中学用是人教新课标教材，线上外教课正好教材匹配，孩子们每周一次外教课做单元复习，巩固了平日课程也提升了的口语水平，半年下来英语老师的感受是最深的，孩子们在班上说英语更自信了！
+        // <a class="inline-block" href="javascript:void (0);">查看详情</a>
+  // ======视频部分========
+  // <div class="main_max bg_color">
+  .main(style='padding: 40px 0 86px 0')
+    embed(src='http://static.video.qq.com/TPout.swf?vid=r0180nphqxn&auto=0', allowfullscreen='true', quality='high', width='1000', height='480', align='middle', allowscriptaccess='always', type='application/x-shockwave-flash')
+  // </div>
+  // ==========校长语录=========
+  .page5_title_box
+    .child_box
+      img(src='imgs/page5_title.png', alt='校长语录')
+  .main
+    ul#myroundabout.roundabout
+      li
+        dl.pe_img
+          dd
+            img(src='imgs/page5－image3.jpg')
+          dd.dd2 西宁十三中
+        p.pe_word
+          | 飞博课堂在西宁十三中是作为特色课开的，现在做了几个试点班，几个月下来学生们都挺喜欢上外教课的，一定程度上补充了我们的外教资源，下学期准备多开几个班。
+      li
+        dl.pe_img
+          dd
+            img(src='imgs/page5－image2.jpg')
+          dd.dd2 重庆书院中学
+        p.pe_word
+          | 教育信息化的大背景下引进了飞博课堂，学校电脑室使用率提高了，希望学校的付出能帮孩子们全面提升，教育制度改革的信号也是频频出现，英语听力分的比重在增加，我们的孩子先操练起来...
+      li
+        dl.pe_img
+          dd
+            img(src='imgs/page5－image4.jpg')
+          dd.dd2 湘府中学
+        p.pe_word
+          | 湘府中学用是人教新课标教材，线上外教课正好教材匹配，孩子们每周一次外教课做单元复习，巩固了平日课程也提升了的口语水平，半年下来英语老师的感受是最深的，孩子们在班上说英语更自信了！
+        script(type='text/javascript').
+          $(document).ready(function(){
+          $('.none_right li:nth-child(4n)').css('margin-right','0');
+          $('#myroundabout').roundabout({
+          autoplay: true,//自动播放
+          autoplayDuration: 3000,//时间
+          autoplayPauseOnHover: true,//自动鼠标移上停滞
+          shape: 'figure8',  //支持属性theJuggler、figure8、waterWheel、square、conveyorBeltLeft、conveyorBeltRight、goodbyeCruelWorld、diagonalRingLeft、diagonalRingRight、rollerCoaster、tearDrop、tickingClock、flurry、nowSlide、risingEssence随便换
+          minOpacity: 1
+          });
+          });
+  // 主体内容 end

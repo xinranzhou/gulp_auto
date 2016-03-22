@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  <style>
+    .red{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<p>border1</p>
+<p>border2</p>
+<p>border3</p>
+<p>border4</p>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/myPlugin.js"></script>
+<script src="js/Jquery.hoverText.js"></script>
+<script>
+  $(document).ready(function(){
+    $('p').hoverText({
+      color:'blue',
+      fontSize:'40px',
+      orderColor:'#f8f8f8'
+    }).css('border-color','#f9f9f9');
+
+  });
+//  function add(a,b){
+//    return a+b;
+//  }
+//  var result=$.extend({},{name:"Tom",age:21},{name:"Jerry",sex:"Boy"},{name:"Jd",sex:"sdy"});
+//  console.log(result);
+//  $.extend({
+//    ww:function add(a,b){
+//      return a+b;
+//    }
+//  });
+//  $.extend({net:{}});
+//  var net = $.extend($.net,{name:'扩张一个函数到。 $.net敏明空间'})
+//  console.log(net);
+</script>
+</body>
+</html>
